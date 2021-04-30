@@ -1,0 +1,98 @@
+
+.my-margin-left{
+    margin-left: -43px;
+}
+.my-font-size14{
+    font-size: 14px;
+}
+.my-font-size19{
+    font-size: 19px;
+}
+.my-font-size21{
+    font-size: 21px;
+}
+.my-bg-img{
+    background-image: url(/Design/img/bg-img.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.font-sans-serif{
+    font-family: 'Dosis', sans-serif;
+}
+
+.font-sans-serif-brand{
+    
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 33px;
+    color: #c1c1c1 !important;
+}
+.font-sans-serif-brand:hover{
+    text-decoration: none;
+}
+.letter-space{
+    letter-spacing: 2px;
+}
+.underline{
+    margin-bottom: 0.5rem;
+    width: 3rem;
+    height: 4px;
+    background: #c1c1c1;
+    display: inline-block;
+    border-radius: 18px;
+}
+.center-items{
+    padding: 80px 20px;
+
+}
+.center-items:nth-child(odd){
+    background-color: #cccccc;
+}
+.center-items:nth-child(even){
+    background-color: #efefef;
+}
+.color-efefef{
+    background-color: #efefef;
+}
+.line-height{
+    line-height: 32px;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.circle{
+    height: 145px;
+    width: 145px;
+    background-color: rgb(68, 68, 68);
+}
+.small-circle{
+    width: 40px;
+    height: 40px;
+    background-color: #ffbc00;
+    position: absolute;
+    top: 0;
+    right: 70px;
+    text-align: center;
+    padding-top: 7px;
+}
+.arrow-right::after{
+    content: '\2192';
+    font-size:100px;
+    color:rgba(88, 88, 88, 0.76);
+    position: absolute;
+    right: -33px;
+}
+.check-mark::before{
+    position: relative;
+    content: "✔";
+    color:  #ffbc00;
+}
+.icon-chat{
+    padding-right: 32px;
+    margin-left: -6px;
+    margin-bottom: 36px;
+    margin-top: -11px
+}

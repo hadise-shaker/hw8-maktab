@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body {
+                font-family: sans-serif;
+            }
+
+.side-nav {
+  height: 100%;
+  width: 215px;
+  padding-top: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+
+.side-nav a, .btn-dropdown {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: gray;
+  padding: 6px 8px 6px 16px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+
+.side-nav a:hover, .btn-dropdown:hover {
+  color: white;
+}
+.dropdown {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.container-text {
+  margin-left: 220px; 
+  font-size: 20px; 
+}
+
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+
+.fa-caret-down {
+  padding-right: 12px;
+  float: right;
+  
+}
+
+    </style>
+</head>
+<body>
+    <div class="side-nav">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        <button class="btn-dropdown">Dropdown 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <a href="#">Search</a>
+      </div>
+      
+      <div class="container-text">
+        <h2>Sidebar Dropdown</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, magnam! Vitae quae iste porro! Nostrum praesentium fuga exercitationem. Facilis corporis cupiditate incidunt iure quasi ut quam molestiae amet accusantium quas!</p>
+      </div>
+      
+      <script>
+      let dropdown = document.querySelectorAll(".btn-dropdown");
+      dropdown.forEach((element) => {
+          element.onclick=function (){
+            element.classList.toggle("active");
+            let dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+        } else {
+                dropdownContent.style.display = "block";
+        }
+          }
+      });
+     /* for (let i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+        });
+      }*/
+      </script>
+</body>
+</html>
